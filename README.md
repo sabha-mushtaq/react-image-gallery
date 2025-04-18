@@ -1,12 +1,53 @@
-# React + Vite
+📸 React Image Gallery with Photo Details & EmailJS
+A responsive image gallery built with React, featuring dynamic routing for photo details, data fetching using Axios, and a styled layout with a background image. Includes EmailJS integration for sending messages directly from the app — no backend required!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+🔍 Dynamic Photo Details: Click on any image to view its title, full-size version, and description.
 
-Currently, two official plugins are available:
+⚙️ REST API Integration: Fetches image data from Sling Academy's sample API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📬 EmailJS Support: Enables sending contact messages from the frontend without a server.
 
-## Expanding the ESLint configuration
+💻 Responsive Design: Optimized for mobile, tablet, and desktop views.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎨 Custom Styling: Uses a background image with a soft overlay for better readability.
+
+🚀 Technologies Used
+React
+
+React Router
+
+Axios
+
+EmailJS
+
+CSS Flexbox + Media Queries
+
+📩 Contact Form with EmailJS
+EmailJS allows sending emails from your React app without any backend.
+To use it:
+
+Sign up at EmailJS.
+
+Create a new email service and template.
+
+Add your service ID, template ID, and public key to the component where you're sending emails.
+
+Use emailjs.send() or emailjs.sendForm().
+
+
+🛠 Setup Instructions
+Clone the repo
+git clone https://github.com/yourusername/image-gallery.git
+
+Install dependencies
+npm install
+
+Start the development server
+npm run dev
+
+🌐 Live Demo
+[https://react-image-gallery-ynn1.onrender.com/]
+
+📃 License
+This project is open-source and free to use under the MIT License.
