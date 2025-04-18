@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import './imageDetails.css';
+import './imagedetails.css';
 
 export default function ImageDetails() {
   const { id } = useParams();
