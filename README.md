@@ -1,5 +1,6 @@
 <img width="1440" alt="Image" src="https://github.com/user-attachments/assets/84805f09-40c2-4218-b079-8014f29aa70a" />
-## 📸 React Image Gallery with Photo Details & EmailJS
+
+##  📸 React Image Gallery with Photo Details & EmailJS
 A responsive image gallery built with React, featuring dynamic routing for photo details, data fetching using Axios, and a styled layout with a background image. Includes EmailJS integration for sending messages directly from the app — no backend required!
 
 ## ✨ Features
