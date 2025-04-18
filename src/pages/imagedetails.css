@@ -1,0 +1,119 @@
+/* Main container */
+.details-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+    min-height: 100vh;
+  }
+  
+  /* Detail view box */
+  .details-div {
+    background-image: url('../assets/Rectangle2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 80vw;
+    max-width: 500px;
+    border-radius: 67px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  /* Title styling */
+  .details-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-family: 'Itim', cursive;
+    color: #fff;
+  }
+  
+  /* Image styling */
+  .details-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Description styling */
+  .details-description {
+    font-family: 'Itim', cursive;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
+  }
+  
+  /* Back button */
+  .back-button-container {
+    margin-top: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    font-family: 'Itim', cursive;
+    background-color: rgba(255,255,255,0.3);
+    color: #724e39;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: rgba(255,255,255,0.5);
+  }
+  
+  /* Loading text */
+  .details-loading {
+    font-family: 'Itim', cursive;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: #724e39;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .details-wrapper {
+      padding-left: 2%;
+    }
+  
+    .details-div {
+      width: 90vw;
+      height: 85vh;
+      border-radius: 40px;
+    }
+  
+    .details-title {
+      font-size: 1.5rem;
+    }
+  
+    .details-image {
+      max-height: 200px;
+    }
+  
+    .details-description {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .details-title {
+      font-size: 1.3rem;
+    }
+  
+    .details-description {
+      font-size: 0.9rem;
+    }
+  
+    .back-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  

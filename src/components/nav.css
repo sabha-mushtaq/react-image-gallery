@@ -1,0 +1,93 @@
+/* Basic nav styles */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 clamp(1rem, 5vw, 2rem);
+    height: clamp(60px, 8vw, 80px);
+    width: 100%;
+   
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Dynamic logo sizing */
+  .logo {
+    height: clamp(30px, 5vw, 50px);
+    margin-right: auto;
+    transition: height 0.3s ease;
+  }
+  
+  /* Navigation links container */
+  .nav-links {
+    display: flex;
+    gap: clamp(1.5rem, 3vw, 3rem);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Larger font size for nav links */
+  .nav-link {
+    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+    font-family: 'Itim', cursive;
+    background: conic-gradient(from 180deg at center, #5F4536 80%, #C58F70 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    padding: 0.5rem;
+    white-space: nowrap;
+    transition: font-size 0.3s ease;
+  }
+  
+  /* Dynamic menu icon sizing */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    width: clamp(24px, 4vw, 32px);
+    height: clamp(24px, 4vw, 32px);
+    margin-left: auto;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile menu container */
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background-image: url('../assets/Rectangle10.png');
+    background-size: cover;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: min(180px, 40vw);
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    /* Hide desktop links */
+    .nav-links {
+      display: none;
+    }
+  
+    /* Show menu icon */
+    .menu-icon {
+      display: block;
+    }
+  
+    /* Show mobile menu when open */
+    .mobile-menu.open {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.75rem;
+    }
+  
+    /* Mobile menu links */
+    .mobile-menu .nav-link {
+      font-size: clamp(1rem, 4vw, 1.2rem);
+      padding: 0.5rem 0;
+    }
+  }

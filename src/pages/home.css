@@ -1,0 +1,89 @@
+/* Mobile-first approach */
+.home-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 50vh; /* Keeps it proportional but reduces excessive height */
+  /* Controls the spacing of the home container */
+  box-sizing: border-box;
+  flex-direction: column; /* Stack the content vertically */
+  flex-grow: 1; /* Ensures content fills available space */
+
+}
+
+.home-content {
+  max-width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 5%;
+  flex-grow: 1; /* This allows the content to grow within the available space */
+}
+
+.home-text {
+  color: rgba(252, 252, 252, 1);
+  font-family: 'Itim', cursive;
+  font-size: clamp(1.5rem, 5vw, 2.2rem); /* Adjusting the font size */
+  line-height: 1.4;
+  margin: 0;
+  max-width: 90%;
+}
+
+.button-container {
+  width: clamp(180px, 55vw, 250px); /* Adjusting button size */
+  height: auto;
+  aspect-ratio: 220/150;
+}
+
+.gallery-button {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-button:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure content area is responsive */
+@media (min-width: 768px) {
+  .home-content {
+    max-width: 600px;
+  }
+
+  .home-text {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-text {
+    font-size: 2.5rem;
+  }
+
+  .button-container {
+    margin-left: 25%;
+  }
+}
+
+/* To fix footer at the bottom and ensure no extra space below */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+
+   
+  
