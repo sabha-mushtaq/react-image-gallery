@@ -36,7 +36,7 @@ Use emailjs.send() or emailjs.sendForm().
 
 ## 🛠 Setup Instructions
 Clone the repo
-git clone https://github.com/yourusername/image-gallery.git
+git clone https://github.com/sabha-mushtaq/react-image-gallery
 
 Install dependencies
 npm install
